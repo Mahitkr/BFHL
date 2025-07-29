@@ -41,8 +41,6 @@ app.post("/bfhl", (req, res) => {
         let num = Number(entry);
         if (num % 2 === 0) {
           even_numbers.push(entry);
-        } else {
-          odd_numbers.push(entry);
         }
         sum += num;
       } else if (isAlphabetString(entry)) {
@@ -50,8 +48,6 @@ app.post("/bfhl", (req, res) => {
         for (let c of entry) {
           all_alpha_chars.push(c);
         }
-      } else if (isSpecialCharacter(entry)) {
-        special_characters.push(entry);
       }
     }
 
